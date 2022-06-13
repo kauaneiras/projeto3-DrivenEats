@@ -1,0 +1,351 @@
+.body{
+    background-color: grey;
+    font-family: 'Roboto', sans-serif;
+
+}
+@media (max-width: 415px){
+    .body{
+        margin: 20px;
+
+    }
+    .topo{
+    background-color: darkgreen;
+    width: 100%;
+    height: 92px;
+    color: #FFFFFF;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.75rem grey);
+
+}
+.topo h1{
+    font-family: 'Righteous', cursive;
+    font-size: 40px;
+}   
+.topo h2{
+    font-size: 20px;
+}
+
+.titulo{    
+    background-color: #E5E5E5;
+    font-family: 'Righteous', cursive;
+    color: black;  
+    font-size: 26px; 
+    padding-left: 20px;
+    padding-top:30px;
+    padding-bottom: 10px;
+}
+.escolha{
+    overflow-x: scroll
+    background-color: #E5E5E5;
+    padding-left: 20px;
+    display: flex;
+    overflow-y: hidden;
+
+}
+
+.caixa-prato {
+    background-color:#FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+    min-height: 229px;
+    min-width: 174px;
+    max-width: 174px;
+    max-height: 229px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border: 5px solid white;
+}
+.caixa-alinhamento{
+    padding-left: 8%;
+    display: flex;
+    flex-direction: column;
+    
+    justify-content:space-around;
+    width: 144px;
+    height: 185px;
+}
+.espaco-pratos {
+    height: 100%;
+    background-color: #E5E5E5;
+    margin-right: 16px;
+    display: flex;
+    justify-content: center;
+}
+.imagem img {
+    border-radius: 10%;
+}
+
+.prato{
+    font-family: 'Robotos', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.descricao div{
+    width: 147px;
+}
+.descricao{
+    font-family: 'Robotos', sans-serif;
+    font-weight: 300;
+    font-size: 15px;
+    color: #A6A6A6;
+    display: flex;
+    justify-content: center;
+    
+}
+.preco{
+    font-family: 'Robotos', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    display: flex;
+    justify-content: flex-start;
+    
+}
+.espaco-fim{
+    width: 100%;
+    height: 100px;
+    padding-top: 28px;
+    background-color: #E5E5E5;
+}
+.botao-baixo {
+    height: 92px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botaocinza {
+    height: 61px;
+    width: 364px;
+    left: 25px;
+    top: 949px;
+    border-radius: 50px;
+    border: none;
+    background-color: grey;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
+  }
+
+  .botao {
+    height: 61px;
+    width: 364px;
+    left: 25px;
+    top: 949px;
+    border-radius: 50px;
+    border: none;
+    background-color: green;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
+    display: none;
+  }
+
+
+
+
+
+
+
+
+
+  .bottombar {
+    height: 92px;
+    width: 100vw;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .botaocinza {
+    height: 61px;
+    width: 364px;
+    left: 25px;
+    top: 949px;
+    border-radius: 50px;
+    border: none;
+    background-color: grey;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
+  }
+
+  .botao {
+    height: 61px;
+    width: 364px;
+    left: 25px;
+    top: 949px;
+    border-radius: 50px;
+    border: none;
+    background-color: green;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
+    display: none;
+  }
+
+
+
+
+  .branco {
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: absolute;
+    display: none;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .confirmacao {
+    height: 353px;
+    width: 377px;
+    left: 19px;
+    top: 336px;
+    border-radius: 9px;
+    background-color: darkgreen;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  .confirmarpedido {
+    padding-top: 21px;
+    padding-bottom: 28px;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: white;
+  }
+
+  .resumo {
+    height: 200px;
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 200;
+  }
+
+  .comidas {
+    height: 150px;
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-direction: column;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: left;
+    color: white;
+  }
+
+  .precos {
+    height: 150px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: left;
+    color: white;
+  }
+
+  .confirmar {
+    height: 52px;
+    width: 329px;
+    left: 43px;
+    top: 583px;
+    border-radius: 100px;
+    font-family: Roboto;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: darkgreen;
+    background-color: white;
+    border: none;
+  }
+
+  .cancelar {
+    height: 52px;
+    width: 333px;
+    left: 43px;
+    top: 635px;
+    border-radius: nullpx;
+    background-color: darkgreen;
+    border: none;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0.018em;
+    text-align: center;
+    color: white;
+  }
+  
+
+  ion-icon {
+    font-size: 15.5px;
+    background-color: darkgreen;
+    color: white;
+    border-radius: 50%;
+    bottom: 2px;
+    right: 2px;
+    position: absolute;
+    display: none;
+  }
+}

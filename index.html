@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="	UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DrivenEats</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+</head>
+
+<body>
+<div class="topo">
+<h1>DrivenEats</h1>
+<h2>Sua comida vegana em 6 minutos</h2>
+</div>
+<div class="espaco"></div>
+<div class="titulo"><h1>Primeiro, seu prato</h1></div>
+<div class="escolha" data-identifier="dishes">
+    <div class="caixa-prato" id="estrogonofe" onclick="pratoestrogonofe()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem">
+            <img src="./img/estrogonofe.jpg" height="87px" width="144px">
+            <ion-icon id="estrogonofecheck" name="checkmark-circle-outline"></ion-icon>
+        </div>
+        <div class="prato"><h1>Estrogonofe</h1></div>
+        <div class="descricao"><h1>Cogumelos e leite de castanha</h1></div>
+        <div class="preco"><h1>R$ 18,90</h1></div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="risotto" onclick="pratorisotto()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/risotto.jpg" height="87px" width="144px"></div>
+        <ion-icon id="risottocheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Risotto Vegano</h1></div>
+        <div class="descricao"><h1>Risotto com legumes frescos</h1></div>
+        <div class="preco">R$ 18,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="salada" onclick="pratosalada()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/salada.jpg" height="87px" width="144px"></div>
+        <ion-icon id="saladacheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Salada</h1></div>
+        <div class="descricao"><h1>Otima opção com vegetais crús e molho</h1></div>
+        <div class="preco">R$ 16,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="wrap" onclick="pratowrap()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/sanduiche.jpg" height="87px" width="144px"></div>
+        <ion-icon id="wrapcheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1></h1>Wrap Vegano</h1></div>
+        <div class="descricao"><h1>Sanduiche delicioso com massa fina</h1></div>
+        <div class="preco">R$ 18,90</div></div>
+    </div>
+</div>
+<div class="espaco"></div>
+<div class="titulo"><h1>Agora, sua bebida</h1></div>
+<div class="escolha" data-identifier="drinks">
+    <div class="caixa-prato" id="zevia" onclick="bebidazevia()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/RefrigeranteZevia.jpg" height="87px" width="144px"></div>
+        <ion-icon id="zeviacheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Refrigerante Zevia</h1></div>
+        <div class="descricao"><h1>Refrigerante vegano Zevia</h1></div>
+        <div class="preco">R$ 8,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="sucolaranja" onclick="bebidasucolaranja()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/suconatural.png" height="87px" width="144px"></div>
+        <ion-icon id="sucolaranjacheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Suco de Laranja</h1></div>
+        <div class="descricao"><h1>Suco natural de laranja</h1></div>
+        <div class="preco">R$ 6,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato"  id="kombucha" onclick="bebidakombucha()" data-identifier="food-option">
+        <div class="caixa-alinhamento"> 
+        <div class="imagem"><img src="./img/kombucha.jpg" height="87px" width="144px"></div>
+        <ion-icon id="kombuchacheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Kombucha</h1></div>
+        <div class="descricao"><h1>Bebida fermentada naturalmente</h1></div>
+        <div class="preco">R$ 12,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="kombuchadacasa" onclick="bebidakombuchadacasa()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/kombuchadacasa.jpg" height="87px" width="144px"></div>
+        <ion-icon id="kombuchadacasacheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Kombucha da Casa</h1></div>
+        <div class="descricao"><h1>Kombucha feita no restaurante</h1></div>
+        <div class="preco">R$ 9,90</div></div>
+    </div>
+</div>
+<div class="espaco"></div>
+<div class="titulo"><h1>Por fim, sua sobremesa</h1></div>
+<div class="escolha" data-identifier="desserts">
+    <div class="caixa-prato" id="parfeit" onclick="sobremesaparfeit()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/parfeit.jpg	" height="87px" width="144px"></div>
+        <ion-icon id="parfeitcheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Parfeit Vegano</h1></div>
+        <div class="descricao"><h1>esse prato é uma delicia</h1></div>
+        <div class="preco">R$ 9,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="sunday" onclick="sobremesasunday()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/sunday.jpg" height="87px" width="144px"></div>
+        <ion-icon id="sundaycheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Sunday de sorvete vegano</h1></div>
+        <div class="descricao"><h1>esse prato é uma delicia</h1></div>
+        <div class="preco">R$ 9,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="strudell" onclick="sobremesastrudell()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/strûdell.jpg" height="87px" width="144px"></div>
+        <ion-icon id="strudellcheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Strudell de Maçã</h1></div>
+        <div class="descricao"><h1>Sobremesa alemã com recheio de maçã</h1></div>
+        <div class="preco">R$ 9,90</div></div>
+    </div>
+    <div class="espaco-pratos"></div>
+    <div class="caixa-prato" id="petitgateau" onclick="sobremesapetitgateau()" data-identifier="food-option">
+        <div class="caixa-alinhamento">
+        <div class="imagem"><img src="./img/petitgateau.jpg" height="87px" width="144px"></div>
+        <ion-icon id="petitgateaucheck" name="checkmark-circle-outline"></ion-icon>
+        <div class="prato"><h1>Petit Gateau</h1></div>
+        <div class="descricao"><h1>Sobremesa vegana deliciosa</h1></div>
+        <div class="preco">R$ 9,90</div></div>
+    </div>
+    
+</div>
+<div class="espaco-fim">
+    <h1> </h1>
+</div>
+<div class="bottombar">
+    <button id="botaocinza" class="botaocinza">
+      Selecione os 3 itens para fechar o pedido
+    </button>
+    <button id="botao" class="botao" onclick="aparecerMensagem()">
+      Fechar pedido
+    </button>
+  </div>
+
+<div
+id="revisaodopedido"
+class="branco"
+data-identifier="confirmation-dialog"
+>
+<div class="confirmacao">
+  <h1 class="confirmarpedido">Confirme seu pedido</h1>
+
+  <div class="resumo">
+    <div class="comidas">
+      <p id="pratoescolhido"></p>
+      <p id="bebidaescolhida"></p>
+      <p id="sobremesaescolhida"></p>
+      <p><b>TOTAL</b></p>
+    </div>
+    <div class="precos">
+      <p id="precoprato"></p>
+      <p id="precobebida"></p>
+      <p id="precosobremesa"></p>
+      <p id="resultado">resultado</p>
+    </div>
+  </div>
+
+  <button class="confirmar" onclick="botaofazerpedido()">
+    Tudo certo, pode pedir!
+  </button>
+  <button class="cancelar" onclick="botaocancelar()">Cancelar</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+
+</body>
+</html>
